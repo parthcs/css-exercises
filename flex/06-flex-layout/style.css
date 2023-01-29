@@ -5,6 +5,43 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+ 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+  /* min-height: 51vh; */
+  flex: 0.6;
+}
+
+.header {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  border: solid black;
 }
 
 img {
@@ -18,10 +55,40 @@ button {
   background: #eee;
 }
 
+.middle1{
+  display: block;
+  text-align: center;
+}
+
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
+
+.content{
+  display: block;
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+/* - The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons. */
